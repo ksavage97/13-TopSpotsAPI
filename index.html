@@ -1,0 +1,37 @@
+<DOCTYPE! html>
+    <html ng-app="app">
+
+    <head>
+        <title>San Diego Top Spots</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body ng-controller="HomeCtrl">
+    <h1>San Diego Top Spots</h1>
+        <div id="mainDiv" class="container">
+            <div class="table-responsive">
+                <table class="table table-striped" id="theTable">
+                    <thead>
+                        <tr id="theTop">
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="topspot in topspots">
+                            <td>{{topspot.name}}</td>
+                            <td>{{topspot.description}}</td>
+                            <td><a class="btn" href="http://www.google.com/maps?q={{topspot.location[0]}},{{topspot.location[1]}}">Click Here to Open on Google Maps</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <script src="bower_components/angular/angular.js"></script>
+            <script src="index.js"></script>
+    </body>
+
+    </html>

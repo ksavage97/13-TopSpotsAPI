@@ -1,0 +1,92 @@
+body {
+    background: #8b8386;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    font-weight: bold;
+    background-color: #1b000c;
+    text-shadow: 4px 4px 0 #5a0028, -1px -1px 0 #5a0028, 1px -1px 0 #5a0028, -1px 1px 0 #5a0028, 1px 1px 0 #5a0028;
+    color: #ddcfcf;
+    width: 100%;
+    margin-top: 0;
+}
+
+#theTable {
+    margin: 20px auto;
+}
+
+.table-responsive {
+    border: 0px;
+}
+
+#theTop {
+    background-color: #360018;
+    color: #ddcfcf;
+}
+
+#mainDiv {
+    width: 90%;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #5a0028;
+    color: #ddcfcf;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+    color: #5a0028;
+    background-color: #ddcfcf;
+}
+
+.btn {
+    background-color: #5a0028;
+    border-radius: 10px;
+    border: 2px solid #420923;
+    color: #ddcfcf;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus .open>.dropdown-toggle.btn {
+    color: #5a0028;
+    background-color: #ddcfcf;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: #662233;
+    }
+    h1 {
+        font-size: 60px;
+        padding-top: 20px;
+        width: 100%;
+        height: 350px;
+        text-shadow: 4px 4px 0 #46003c, -1px -1px 0 #46003c, 1px -1px 0 #46003c, -1px 1px 0 #46003c, 1px 1px 0 #46003c;
+        background: url("http://i.imgur.com/ajpoeho.jpg");
+        background-size: cover;
+    }
+    #theTop {
+        background-color: #200011;
+        color: #ddcfcf;
+    }
+    .table-striped>tbody>tr:nth-child(odd)>td,
+    .table-striped>tbody>tr:nth-child(odd)>th {
+        background-color: #542840;
+        color: #ddcfcf;
+    }
+    .table-striped>tbody>tr:nth-child(even)>td,
+    .table-striped>tbody>tr:nth-child(even)>th {
+        color: #5a0028;
+        background-color: #ddcfcf;
+    }
+}
+
