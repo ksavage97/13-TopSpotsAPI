@@ -15,7 +15,7 @@ namespace TopSpotsAPI.Controllers
         //GET /api/topspots
         public IEnumerable<TopSpots> Get()
         {
-           TopSpots[] TopSpot = JsonConvert.DeserializeObject<TopSpots[]>(File.ReadAllText(@"C:\Dev\13-TopSpotsAPI\topspots.json"));
+           TopSpots[] TopSpot = JsonConvert.DeserializeObject<TopSpots[]>(File.ReadAllText(@"C:\Dev\13-TopSpotsAPI\app\data\topspots.json"));
             return TopSpot;
         }
     }
